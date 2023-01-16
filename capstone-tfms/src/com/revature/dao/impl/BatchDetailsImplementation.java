@@ -27,8 +27,8 @@ public class BatchDetailsImplementation implements BatchDetails {
 		batchList.add(batchDetails);
 
 		System.out.println("Do you want to continue?");
-		System.out.println("to continue press 1");
-		System.out.println("else press 2");
+		System.out.println("To continue press 1");
+		System.out.println("Else press 2");
 
 		int i = sc.nextInt();
 
@@ -67,16 +67,20 @@ public class BatchDetailsImplementation implements BatchDetails {
 	@Override
 	public void deleteBatchDetails() {
 		// TODO Auto-generated method stub
-		Iterator<Batch> it = batchList.iterator();
-		while (it.hasNext()) {
-			System.out.println("enter topic name you want to delete");
-			String tName = sc.nextLine();
-			if (it.next().getTopicName() == tName) {
-				it.remove();
-				System.out.println("Topic name deleted successfully");
-				break;
+		System.out.print("Enter topic name which you want delete");
+		String del = sc.nextLine();
+		Iterator<Batch> itr = batchList.iterator();
+		int index = -1;
+		while (itr.hasNext()) {
+			if (itr.next().getTopicName() == del) {
+				itr.remove();
+				index = 0;
 			}
 		}
+		if (index == 0)
+			System.out.print("deleted successfully");
+		else
+			System.out.print("enter valid topic name");
 		System.out.println("Do you want to continue?");
 		System.out.println("to continue press 1");
 		System.out.println("else press 2");
@@ -89,7 +93,6 @@ public class BatchDetailsImplementation implements BatchDetails {
 		case 2:
 			System.out.println("Thankyou");
 		}
-
 	}
 
 	@Override
