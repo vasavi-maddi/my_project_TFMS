@@ -1,6 +1,5 @@
 package com.revature.dao.impl;
 
-import java.util.Iterator;
 import java.util.Scanner;
 import com.revature.dao.BatchDetails;
 import com.revature.model.Batch;
@@ -69,7 +68,15 @@ public class BatchDetailsImplementation implements BatchDetails {
 		// TODO Auto-generated method stub
 		System.out.print("Enter topic name which you want delete");
 		String del = sc.nextLine();
-		Iterator<Batch> itr = batchList.iterator();
+		for(Batch i : batchList) {
+			if(i.getTopicName().equals(del)) 
+			{
+				batchList.remove(i);
+				
+			}
+			
+		}
+		/*Iterator<Batch> itr = batchList.iterator();
 		int index = -1;
 		while (itr.hasNext()) {
 			if (itr.next().getTopicName() == del) {
@@ -81,6 +88,7 @@ public class BatchDetailsImplementation implements BatchDetails {
 			System.out.print("deleted successfully");
 		else
 			System.out.print("enter valid topic name");
+			*/
 		System.out.println("Do you want to continue?");
 		System.out.println("to continue press 1");
 		System.out.println("else press 2");
