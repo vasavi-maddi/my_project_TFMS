@@ -12,7 +12,7 @@ public class DatabaseConnection {
 
 	public static Connection getConnection() {
 		if (connection == null) {
-			ResourceBundle resourceBundle = ResourceBundle.getBundle("config");
+			ResourceBundle resourceBundle = ResourceBundle.getBundle("database");
 			String driver = resourceBundle.getString("driver");
 			String dburl = resourceBundle.getString("dburl");
 			String username = resourceBundle.getString("username");
@@ -20,7 +20,7 @@ public class DatabaseConnection {
 
 			try {
 				Class.forName(driver);
-				connection = DriverManager.getConnection(dburl, username, password);
+				connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306"+"/project_tfms","root","admin");
 			} catch (ClassNotFoundException | SQLException e) {
 				e.printStackTrace();
 			}

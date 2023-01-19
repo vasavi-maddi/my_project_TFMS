@@ -52,5 +52,25 @@ FOREIGN KEY (trainer_id) REFERENCES trainer_details(trainer_id),
 FOREIGN KEY (Associate_id) REFERENCES Associate(Associate_id)
 );
 
+Drop table if exists question_management;
+create table question_management(
+question_id varchar(10) primary key,
+question_section enum('Instructor','Course Material','Learning Effectiveness','Environment','Job Impact'),
+question_text varchar(300)
+);
 
+
+Drop table if exists capture_feedback;
+create table capture_feedback(
+trainer_id varchar(15),
+FOREIGN KEY (trainer_id) REFERENCES trainer_details(trainer_id),
+Associate_id varchar(40),
+FOREIGN KEY (Associate_id) REFERENCES Associate(Associate_id),
+topic_name varchar(255),
+question_id varchar(10),
+foreign key (question_id) references question_management(question_id),
+question_section enum('Instructor','Course Material','Learning Effectiveness','Environment','Job Impact'),
+question_text varchar(255),
+rating int
+);
 

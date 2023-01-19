@@ -32,7 +32,7 @@ BEGIN
 	DELETE FROM BATCH WHERE topic_name=del_topic_name;
 END $$
 delimiter ;
-call DeleteBatchDetails("Core Java");
+call DeleteBatchDetails("maven");
 
 
 drop procedure if exists UpdateBatchTopicName;

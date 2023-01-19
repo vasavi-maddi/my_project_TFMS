@@ -3,6 +3,7 @@ package com.revature.service.impl;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
@@ -10,6 +11,7 @@ import org.apache.log4j.Logger;
 import com.revature.config.DatabaseConnection;
 import com.revature.service.Login;
 import com.revature.model.Menu;
+import com.revature.model.User;
 
 public class LoginImplementation implements Login{
 	Scanner sc = new Scanner(System.in);
@@ -47,6 +49,31 @@ public class LoginImplementation implements Login{
 			}
 
 			}while(loggoff==1);
+	}
+
+	@Override
+	public User getUser(User u) {
+		Connection con=null;
+		con=DatabaseConnection.getConnection();
+		try {
+			Statement stm=con.createStatement();
+			ResultSet rs=stm.executeQuery("Select * from User");
+			while(rs.next())
+			{
+				if(u.getUsername().equals(rs.getString(1))&& u.getPassword().equals(rs.getString(2))) {
+					u.setUsername(rs.getString(1));
+					u.setPassword(rs.getString(2));
+					u.setPassword(rs.getString(3));
+				}
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			con.close();
+		} catch (SQLException e) {}
+		return u;
 	}
 		
 }
