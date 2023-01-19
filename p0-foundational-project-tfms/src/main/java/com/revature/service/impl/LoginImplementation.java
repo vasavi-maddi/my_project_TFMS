@@ -1,0 +1,52 @@
+package com.revature.service.impl;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import org.apache.log4j.Logger;
+
+import com.revature.config.DatabaseConnection;
+import com.revature.service.Login;
+import com.revature.model.Menu;
+
+public class LoginImplementation implements Login{
+	Scanner sc = new Scanner(System.in);
+    Menu m = new Menu();
+    Connection con=null;
+    private static final Logger logger = Logger.getLogger(LoginImplementation.class);
+	
+	public void adminLogin() throws SQLException {
+		con = DatabaseConnection.getConnection();
+		int loggoff=0;
+		do {
+			logger.info("\n########## ENTER LOGIN DETAILS ########### ");
+			logger.info("\nEnter your USERNAME  :-");
+			String username = sc.next();
+			
+			
+			logger.info("\nEnter your PASSWORD :-");
+			String password = sc.next();
+			
+			java.sql.Statement stms=con.createStatement();
+			ResultSet rs = stms.executeQuery("select * from User");
+			
+			if(rs.next()) {
+				if(username.equals(rs.getString(1)) && password.equals(rs.getString(2))) {
+					logger.info("\n########### WELCOME ###########\n");
+					m.menu();
+					
+				}
+				else {
+					logger.info("\nEnter correct details\n");
+					logger.info("\nWant to enter again press-1\n");
+					int again=sc.nextInt();
+					loggoff=again;
+				}
+			}
+
+			}while(loggoff==1);
+	}
+		
+}
