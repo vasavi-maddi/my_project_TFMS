@@ -21,11 +21,12 @@ select * from trainer_details;
 drop table Associate;
 CREATE TABLE Associate
 (    
-    Associate_id VARCHAR(40) PRIMARY KEY NOT NULL,
+    Associate_id VARCHAR(40) NOT NULL,
     Associate_name VARCHAR(30),
     Associate_track ENUM('java','dotnet','mainframe','testing') NOT NULL,
     Associate_qualification VARCHAR(10),
-    Associate_experience VARCHAR(20)
+    Associate_experience VARCHAR(20),
+    PRIMARY KEY(Associate_id)
 );
 
 INSERT INTO Associate VALUES('101','Aakash','Java','M-Tech','5');
@@ -42,12 +43,12 @@ INSERT INTO Associate VALUES('110','hemlata','Mainframe','M.sc','12');
 drop table batch;
 create table batch(
 topic_name varchar(255),
-batch_duration integer, 
-start_date date,
-end_date date,
-trainer_id varchar(10),
+start_date varchar(255),
+end_date varchar(255),
+batch_duration int, 
+trainer_id varchar(15),
+Associate_id varchar(40),
 FOREIGN KEY (trainer_id) REFERENCES trainer_details(trainer_id),
-Associate_id varchar(10),
 FOREIGN KEY (Associate_id) REFERENCES Associate(Associate_id)
 );
 
