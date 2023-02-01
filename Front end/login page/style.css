@@ -1,0 +1,28 @@
+.wholebody{
+    background-color: #f6c2ddb2;
+}
+.first{
+    position: absolute;
+    top: 20%;
+    right: 60%;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 50px;
+    background-color: whitesmoke;
+}
+
+img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    opacity: 25px;
+    width: 50%;
+    height: 50%;
+}
+.form-text{
+    font-size: x-small;
+}
+.d-flex{
+    position: relative;
+    left: 60%;
+}

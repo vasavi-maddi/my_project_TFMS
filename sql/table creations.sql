@@ -61,7 +61,7 @@ question_text varchar(300)
 
 
 Drop table if exists capture_feedback;
-create table capture_feedback(
+create table caShowBatchDetailsAddBatchDetailspture_feedback(
 trainer_id varchar(15),
 FOREIGN KEY (trainer_id) REFERENCES trainer_details(trainer_id),
 Associate_id varchar(40),
