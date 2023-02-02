@@ -19,6 +19,7 @@
     />
 
     <script src="https://kit.fontawesome.com/6ce3a30560.js" crossorigin="anonymous"></script>
+    
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
@@ -56,6 +57,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -106,111 +108,113 @@
         </div>
       </div>
       <!-- End Breadcrumbs -->
-      <div id="search">
-        <label for="searchInput">Find <i class="fa fa-search"></i></label>
-        <input id="searchInput" type="text" placeholder="Search">
-    </div>
+      <!-- input tag -->
+      
+      <input type="text" id="myInput" onkeyup="myFunction()" 
+      placeholder="Search topic names.." title="Type in a name">
+
+      <!--End of input tag-->
       <div class="container mt-5 px-2">
         <div class="table-responsive">
           <table id="myTable"
-            class="table table-responsive table-borderless"
-            style="text-align: center"
-          >
-            <thead>
-              <tr class="bg-light">
-                <th scope="col" width="5%">#</th>
-                <th data-sort="topicname" scope="col" width="20%">Topic Name</th>
-                <th scope="col" width="10%">Start Date</th>
-                <th scope="col" width="20%">End Date</th>
-                <th scope="col" width="20%">Duration</th>
-                <th scope="col" width="20%">Edite</th>
-                <th scope="col" width="20%">Delete</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Java</td>
-                <td>2022-12-19</td>
-                <td>2023-03-19</td>
-                <td>3600</td>
-                
-                <td>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-toggle="modal"
-                    data-target="#exampleModalCenter"
-                  >
-                    Edit
-                  </button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>JDBC</td>
-                <td>2022-12-19</td>
-                <td>2023-03-19</td>
-                <td>2400</td>
-                <td>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-toggle="modal"
-                    data-target="#exampleModalCenter"
-                  >
-                    Edit
-                  </button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Spring</td>
-                <td>2022-12-19</td>
-                <td>2023-03-19</td>
-                <td>1500</td>
-                <td>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-toggle="modal"
-                    data-target="#exampleModalCenter"
-                  >
-                    Edit
-                  </button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Maven</td>
-                <td>2022-12-19</td>
-                <td>2023-03-19</td>
-                <td>1500</td>
-                <td>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-toggle="modal"
-                    data-target="#exampleModalCenter"
-                  >
-                    Edit
-                  </button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          class="table table-responsive table-borderless"
+          style="text-align: center"
+        >
+          <thead>
+            <tr class="bg-light">
+              <th scope="col" width="5%">#</th>
+              <th scope="col" width="20%">Topic name</th>
+              <th scope="col" width="10%">Start Date</th>
+              <th scope="col" width="20%">End Date</th>
+              <th scope="col" width="20%">Duration</th>
+              <th scope="col" width="20%">Edit</th>
+              <th scope="col" width="20%">Delete</th>
+            </tr>
+          </thead>
+      
+         <tbody>
+            <tr>
+              <td>1</td>
+              <td>Java</td>
+              <td>2022-12-9</td>
+              <td>2023-03-19</td>
+              <td>3600</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  Edit
+                </button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>JDBC</td>
+              <td>2022-12-19</td>
+              <td>2023-03-19</td>
+              <td>2400</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  Edit
+                </button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Spring</td>
+              <td>2022-12-19</td>
+              <td>2023-03-19</td>
+              <td>1500</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  Edit
+                </button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Maven</td>
+              <td>2022-12-19</td>
+              <td>2023-03-19</td>
+              <td>1500</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  Edit
+                </button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         </div>
         <button id="prevButton">Previous</button> 
     <button id="nextButton">Next</button> 
@@ -417,5 +421,9 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <!--Related script files-->
+    <script src="assets/js/searchbox.js"></script>
+    <script src="assets/js/pagination.js"></script>
+    <script src="assets/js/sorting.js"></script>
   </body>
 </html>
