@@ -320,7 +320,13 @@ h6 {
     display: none;
   }
 }
-
+@media (max-width: 991px){
+.table-responsive{display:block;
+  height: 100vh;
+  padding-top:30%;
+  margin-bottom:100%;
+  top: 15px;}
+}
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -1636,3 +1642,5 @@ left:70%;
   font-size: 16px;
   border-radius: 2px; /* Green */
 }
+
+

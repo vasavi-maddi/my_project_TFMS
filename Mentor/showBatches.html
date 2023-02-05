@@ -110,12 +110,13 @@
       <!-- End Breadcrumbs -->
       <!-- input tag -->
       
-      <input type="text" id="myInput" onkeyup="myFunction()" 
-      placeholder="Search topic names.." title="Type in a name">
+      
 
       <!--End of input tag-->
       <div class="container mt-5 px-2">
         <div class="table-responsive">
+          <input type="text" id="myInput" onkeyup="searchFunction()" 
+      placeholder="Search topic names.." title="Type in a name">
           <table id="myTable"
           class="table table-responsive table-borderless"
           style="text-align: center"
@@ -215,10 +216,6 @@
             </tr>
           </tbody>
         </table>
-        </div>
-        <button id="prevButton">Previous</button> 
-    <button id="nextButton">Next</button> 
-      </div>
     </main>
     <!-- End #main -->
 
@@ -422,8 +419,7 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <!--Related script files-->
-    <script src="assets/js/searchbox.js"></script>
-    <script src="assets/js/pagination.js"></script>
+     <script src="assets/js/searchbox.js"></script> 
     <script src="assets/js/sorting.js"></script>
   </body>
 </html>
