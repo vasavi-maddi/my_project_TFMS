@@ -1,17 +1,17 @@
 # Project_TFMS
-###I am working on Batch usecase which consists of 2 foreign keys
-<sup>1)I have created ER diagram</sup>
-<sup>2)I have created Batch Table using DDL in sql workbench.</sup>
-<sub>I have cretaed one more table for User for Authentication</sub>
-<sup>3)In eclipse I created Maven project</sup>
-<sub>In pom.xml file i have added apache.maven puglin
-I have created POJO classes for both Batch and User
-In dao layer I created inferface which consistes of abstract methods
-<sub>-----getBatch
------addBatchDetails
------showBatchDetais
------deleteBatchDetails
------updateBatchDetails</sub>
+###I am working on Batch usecase which consists of 2 foreign keys<br>
+<sup>1)I have created ER diagram</sup><br>
+<sup>2)I have created Batch Table using DDL in sql workbench.</sup><br>
+<sub>I have cretaed one more table for User for Authentication</sub><br>
+<sup>3)In eclipse I created Maven project</sup><br>
+<sub>In pom.xml file i have added apache.maven puglin<br>
+I have created POJO classes for both Batch and User<br>
+In dao layer I created inferface which consistes of abstract methods<br>
+<sub>-----getBatch<br>
+-----addBatchDetails<br>
+-----showBatchDetais<br>
+-----deleteBatchDetails<br>
+-----updateBatchDetails</sub><br>
 All these methods are implemented in dao.impl layer
 In service layer there is an interface for user authentication
 and this is implemeented in service.impl
