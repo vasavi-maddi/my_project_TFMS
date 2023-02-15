@@ -12,21 +12,21 @@ In dao layer I created inferface which consistes of abstract methods<br>
 -----showBatchDetais<br>
 -----deleteBatchDetails<br>
 -----updateBatchDetails</sub><br>
-All these methods are implemented in dao.impl layer
-In service layer there is an interface for user authentication
-and this is implemeented in service.impl
-I have also written menu driven application</sub>
-<sup>4)While implementing, to establish connection I used JDBC
+  <sup>All these methods are implemented in dao.impl layer</sup><br>
+<sup>In service layer there is an interface for user authentication
+  and this is implemeented in service.impl</sup><br>
+<sup>I have also written menu driven application</sup><br>
+<sup>4)While implementing, to establish connection I used JDBC<br>
 I have added mysql-connector-j dependency in my pom.xml file
-and added database.propeties file</sup>
-<sub>I have established connection using singleton connection</sub> 
-<sup>5)For logging purpose I have added log4j dependency in pom.xml</sup
-6)For testcases I have added junit dependency in pom.xml
-I have created testcases for
-----establishing connection
-----authentication user
-----addBatchDetails
-----ShowBatchDetails
-for all these 4 methods i have written testcases
+and added database.propeties file</sup><br>
+<sub>I have established connection using singleton connection</sub><br> 
+  <sup>5)For logging purpose I have added log4j dependency in pom.xml</sup><br>
+  <sup>6)For testcases I have added junit dependency in pom.xml</sup><br>
+<sub>I have created testcases for<br>
+----establishing connection<br>
+----authentication user<br>
+----addBatchDetails<br>
+  ----ShowBatchDetails</sub><br>
+  <sup>for all these 4 methods i have written testcases</sup><br>
 
-This is all about my project and the technologies used in my project
+  <sup>This is all about my project and the technologies used in my project</sup><br>
