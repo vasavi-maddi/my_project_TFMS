@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,15 +49,15 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="trainers.html">Trainers</a></li>
+          <li><a class="active" href="index.jsp">Home</a></li>
+          <li><a href="about.jsp">About</a></li>
+          <li><a href="courses.jsp">Courses</a></li>
+          <li><a href="">Trainers</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="LoginFile.html" class="get-started-btn">Login</a>
+      <a href="LoginFile.jsp" class="get-started-btn">Login</a>
 
     </div>
   </header><!-- End Header -->
@@ -71,7 +72,7 @@
       <h1>Learning Today,<br>Leading Tomorrow</h1>
 
       <h2> We are team of talented designers making websites with bootstrap</br></h2>
-      <a href="LoginFile.html" class="btn-get-started">Login</a>
+      <a href="LoginFile.jsp" class="btn-get-started">Login</a>
     </div>
   </section><!-- End Hero -->
 
@@ -211,7 +212,7 @@
                       <p class="price">$169</p>
                     </div>
     
-                    <h3><a href="course-details_CoreJava.html">CoreJava Programming</a></h3>
+                    <h3><a href="">CoreJava Programming</a></h3>
                     <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                     <div class="trainer d-flex justify-content-between align-items-center">
                       <div class="trainer-profile d-flex align-items-center">
@@ -237,7 +238,7 @@
                       <p class="price">$250</p>
                     </div>
     
-                    <h3><a href="course-details_JDBC.html">Database Connectivity</a></h3>
+                    <h3><a href="">Database Connectivity</a></h3>
                     <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                     <div class="trainer d-flex justify-content-between align-items-center">
                       <div class="trainer-profile d-flex align-items-center">
@@ -262,7 +263,7 @@
                       <p class="price">$180</p>
                     </div>
     
-                    <h3><a href="course-details_spring.html">Framework</a></h3>
+                    <h3><a href="">Framework</a></h3>
                     <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                     <div class="trainer d-flex justify-content-between align-items-center">
                       <div class="trainer-profile d-flex align-items-center">
@@ -288,7 +289,7 @@
                       <p class="price">$180</p>
                     </div>
     
-                    <h3><a href="course-details_maven.html">Build Tool</a></h3>
+                    <h3><a href="">Build Tool</a></h3>
                     <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                     <div class="trainer d-flex justify-content-between align-items-center">
                       <div class="trainer-profile d-flex align-items-center">

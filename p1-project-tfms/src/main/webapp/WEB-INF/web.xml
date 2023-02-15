@@ -10,8 +10,58 @@
   	<description></description>
   	<servlet-class>com.revature.servlets.LoginAuthentication</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AddBatch</servlet-name>
+  	<display-name>AddBatch</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlets.AddBatch</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteBatch</servlet-name>
+  	<display-name>DeleteBatch</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlets.DeleteBatch</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditBatch</servlet-name>
+  	<display-name>EditBatch</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlets.EditBatch</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ShowBatch</servlet-name>
+  	<display-name>ShowBatch</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlets.ShowBatch</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateBatch</servlet-name>
+  	<display-name>UpdateBatch</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlets.UpdateBatch</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginAuthentication</servlet-name>
   	<url-pattern>/LoginAuthentication</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddBatch</servlet-name>
+  	<url-pattern>/AddBatch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteBatch</servlet-name>
+  	<url-pattern>/DeleteBatch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditBatch</servlet-name>
+  	<url-pattern>/EditBatch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ShowBatch</servlet-name>
+  	<url-pattern>/ShowBatch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateBatch</servlet-name>
+  	<url-pattern>/UpdateBatch</url-pattern>
   </servlet-mapping>
 </web-app>

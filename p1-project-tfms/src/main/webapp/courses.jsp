@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +6,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Course Details - Mentor Bootstrap Template</title>
+  <title>Courses - Revature</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="my_img/fav_icon.png" rel="icon">
+  
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -52,7 +53,6 @@
           <li><a href="about.html">About</a></li>
           <li><a class="active" href="courses.html">Courses</a></li>
           <li><a href="trainers.html">Trainers</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -60,143 +60,130 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main">
+  <main id="main" data-aos="fade-in">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs" data-aos="fade-in">
+    <div class="breadcrumbs">
       <div class="container">
-        <h2>Course Details</h2>
+        <h2>Courses</h2>
         <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Cource Details Section ======= -->
-    <section id="course-details" class="course-details">
+    <!-- ======= Courses Section ======= -->
+    <section id="courses" class="courses">
       <div class="container" data-aos="fade-up">
 
-        <div class="row">
-          <div class="col-lg-8">
-            <img src="my_img/JDBC.jpg" class="img-fluid" alt="">
-            <h3>About this Specialization</h3>
-            <p>
-                Are you somebody who already knows Core Java concepts, 
-                but you are finding it challenging to create an application
-                or a project using them? Well, you can do that once you 
-                understand Database languages. In the JDBC in Java Course,
-                you will learn about Java Database Connectivity, also 
-                popularly known as JDBC, used to connect Java and database
-                to create a full-fledged application. You will start the
-                course by getting a basic idea about JDBC, and then you 
-                will understand its architecture and different types of 
-                drivers. At last, you will do the practical implementation 
-                of the same by completing the seven famous steps of JDBC in 
-                Java.
-                Enroll yourself in one of the Software Engineering 
-                Courses to further your Java knowledge.
-            </p>
-          </div>
-          <div class="col-lg-4">
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
 
-            <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Trainer</h5>
-              <p><a href="#">Lana</a></p>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <img src="my_img/CoreJava.webp" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>CoreJava</h4>
+                  <p class="price">$169</p>
+                </div>
+
+                <h3><a href="course-details_CoreJava.html">CoreJava Programming</a></h3>
+                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <div class="trainer d-flex justify-content-between align-items-center">
+                  <div class="trainer-profile d-flex align-items-center">
+                    <img src="my_img/trainers/trainer-1.jpg" class="img-fluid" alt="">
+                    <span>Antonio</span>
+                  </div>
+                  <div class="trainer-rank d-flex align-items-center">
+                    <i class="bx bx-user"></i>&nbsp;50
+                    &nbsp;&nbsp;
+                    <i class="bx bx-heart"></i>&nbsp;65
+                  </div>
+                </div>
+              </div>
             </div>
+          </div> <!-- End Course Item-->
 
-            <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Experience</h5>
-              <p>10 years</p>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="course-item">
+              <img src="my_img/JDBC.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>JDBC</h4>
+                  <p class="price">$250</p>
+                </div>
+
+                <h3><a href="course-details_JDBC.html">Database Connectivity</a></h3>
+                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <div class="trainer d-flex justify-content-between align-items-center">
+                  <div class="trainer-profile d-flex align-items-center">
+                    <img src="my_img/trainers/trainer-2.jpg" class="img-fluid" alt="">
+                    <span>Lana</span>
+                  </div>
+                  <div class="trainer-rank d-flex align-items-center">
+                    <i class="bx bx-user"></i>&nbsp;35
+                    &nbsp;&nbsp;
+                    <i class="bx bx-heart"></i>&nbsp;42
+                  </div>
+                </div>
+              </div>
             </div>
+          </div> <!-- End Course Item-->
 
-            <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Course Fee</h5>
-              <p>$250</p>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="course-item">
+              <img src="my_img/spring.png" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>Spring</h4>
+                  <p class="price">$180</p>
+                </div>
+
+                <h3><a href="course-details_spring.html">Framework</a></h3>
+                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <div class="trainer d-flex justify-content-between align-items-center">
+                  <div class="trainer-profile d-flex align-items-center">
+                    <img src="my_img/trainers/trainer-3.jpg" class="img-fluid" alt="">
+                    <span>Brandon</span>
+                  </div>
+                  <div class="trainer-rank d-flex align-items-center">
+                    <i class="bx bx-user"></i>&nbsp;20
+                    &nbsp;&nbsp;
+                    <i class="bx bx-heart"></i>&nbsp;85
+                  </div>
+                </div>
+              </div>
             </div>
+          </div> <!-- End Course Item-->
 
-            <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Course Duration</h5>
-              <p>2400 mins</p>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="course-item">
+              <img src="my_img/maven.png" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>Maven</h4>
+                  <p class="price">$180</p>
+                </div>
+
+                <h3><a href="course-details_maven.html">Build Tool</a></h3>
+                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <div class="trainer d-flex justify-content-between align-items-center">
+                  <div class="trainer-profile d-flex align-items-center">
+                    <img src="my_img/trainers/trainer-3.jpg" class="img-fluid" alt="">
+                    <span>Brandon</span>
+                  </div>
+                  <div class="trainer-rank d-flex align-items-center">
+                    <i class="bx bx-user"></i>&nbsp;20
+                    &nbsp;&nbsp;
+                    <i class="bx bx-heart"></i>&nbsp;85
+                  </div>
+                </div>
+              </div>
             </div>
+          </div> <!-- End Course Item-->
 
-            
-
-          </div>
         </div>
 
       </div>
-    </section><!-- End Cource Details Section -->
-
-    <!-- ======= Cource Details Tabs Section ======= -->
-    <section id="cource-details-tabs" class="cource-details-tabs">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">What will you learn?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Pre Requisites</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Certification</a>
-              </li>
-    
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>What will you learn?</h3>
-                    <p class="fst-italic">Connecting Java App to a database</p>
-                    <p>Executing queries to the database from the Java App</p>
-                    <p>Add database support with JDBC: select, insert, update, delete queries.</p>
-                    <p>Build a fully functioning application that uses database as a persistance storage</p>
-                    <p>DAO pattern</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="my_img/what_you_will_learn.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Pre Requisites</h3>
-                    <p class="fst-italic">Understanding of Java syntax: you can refer to my free course "Master Java Basics"</p>
-                    <p>Understanding of Java OOP: you can refer to my OOP course</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="my_img/prerequisite.jpeg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Certification</h3>
-                    <p class="fst-italic">You will also get verifiable 
-                        certificates (unique certification number and 
-                        your unique URL) when you complete each of the 
-                        courses. This course is to gain understanding of 
-                        JDBC &amp; its related core concepts in designing
-                        and developing web applications to establish a 
-                        connection between database and applications.</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="my_img/certification.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Cource Details Tabs Section -->
+    </section><!-- End Courses Section -->
 
   </main><!-- End #main -->
 
@@ -230,7 +217,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Courses we offer</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">CoreJava Programming</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Database Connectivity</a></li>

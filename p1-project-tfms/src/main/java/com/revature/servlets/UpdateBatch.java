@@ -1,26 +1,24 @@
 package com.revature.servlets;
 
 import java.io.IOException;
-//import java.io.PrintWriter;
-import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.revature.service.impl.LoginImplementation;
+import com.revature.dao.impl.BatchDetailsImplementation;
 
 /**
- * Servlet implementation class LoginAuthentication
+ * Servlet implementation class UpdateBatch
  */
-public class LoginAuthentication extends HttpServlet {
+public class UpdateBatch extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginAuthentication() {
+    public UpdateBatch() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,24 +27,12 @@ public class LoginAuthentication extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//PrintWriter pw= response.getWriter();
-		String u= request.getParameter("Username");
-		String p= request.getParameter("Password"); 
-		LoginImplementation s=new LoginImplementation();
-		boolean flag=true;
-		try {
-			flag=s.adminLogin(u,p);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		if(flag)
-		{
-			response.sendRedirect("index2.jsp");
-		}
-		else {
-			response.sendRedirect("index.jsp");
-		}
+		String topic=request.getParameter("topicName");
+		String[] press=request.getParameterValues("columnSelected");
+		BatchDetailsImplementation b=new BatchDetailsImplementation();
+		String newValue=request.getParameter("newValue");
+		b.updateBatchDetails(topic, Integer.parseInt(press[0]),newValue);
+		response.sendRedirect("editBatch.jsp");
 	}
 
 	/**
