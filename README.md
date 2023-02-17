@@ -1,5 +1,5 @@
 # Project_TFMS
-##P0 project
+**P0 project**<br>
 I am working on Batch usecase which consists of 2 foreign keys<br>
 1)I have created ER diagram<br>
 2)I have created Batch Table using DDL in sql workbench.<br>
@@ -31,8 +31,10 @@ I have created testcases for<br>
 for all these 4 methods i have written testcases<br>
 This is all about my project and the technologies used in my project<br>
 
+<br>
+<br>
 
-##P1 project
+**P1 project**<br>
 I have Created JSp files and Servlets<br>
 I have written 4 servlets<br>
 ----AddBatch which is executed when addBatch.jsp is submitted<br>
